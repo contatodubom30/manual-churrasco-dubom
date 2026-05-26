@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manual da Marca — Churrasco du Bom</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --carvao:     #1A1A1A;
+    --bordo:      #7B1C1C;
+    --dourado:    #C49A3C;
+    --branco:     #FFFFFF;
+    --bege:       #EDE8DF;
+    --cinza-txt:  #555555;
+    --cinza-claro:#AAAAAA;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f4f4f4;
+    color: var(--carvao);
+    padding: 20px;
+  }
+
+  .logo-svg-wrap {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* Estilização básica para visualização dos slides em rolagem vertical */
+  .slide {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 675px;
+    background: var(--branco);
+    margin: 0 auto 40px auto;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .s-cover {
+    background: var(--carvao);
+    color: var(--branco);
+    border-left: 30px solid var(--dourado);
+  }
+
+  .s-dark {
+    background: var(--bordo);
+    color: var(--branco);
+  }
+
+  .s-light {
+    background: var(--bege);
+    color: var(--carvao);
+  }
+
+  h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; }
+  h1 { font-size: 4.5rem; color: var(--dourado); }
+  h2 { font-size: 3rem; margin-bottom: 20px; color: var(--bordo); }
+  .s-dark h2 { color: var(--dourado); }
+  
+  p { font-size: 1.1rem; line-height: 1.6; color: var(--cinza-txt); margin-bottom: 15px; }
+  .s-dark p { color: var(--bege); }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .pilar-box { background: rgba(0,0,0,0.05); padding: 20px; border-radius: 8px; border-left: 4px solid var(--dourado); }
+  
+  .slogan-display {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--dourado);
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="slide s-cover">
+  <div class="logo-svg-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="160" height="170">
+      <path d="M20,30 C60,20 140,20 180,30 C180,120 160,180 100,210 C40,180 20,120 20,30 Z" fill="none" stroke="#C49A3C" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M26,36 C63,27 137,27 174,36 C174,115 155,172 100,201 C45,172 26,115 26,36 Z" fill="#7B1C1C" opacity="0.15"/>
+      <path d="M100,60 C125,90 140,120 130,150 C120,175 80,175 70,150 C60,120 75,90 100,60 Z" fill="#C49A3C" opacity="0.3"/>
+      <path d="M100,80 C115,105 125,125 120,145 C112,160 88,160 80,145 C75,125 85,105 100,80 Z" fill="#C49A3C"/>
+      <g transform="rotate(35 100 120)">
+        <line x1="100" y1="60" x2="100" y2="170" stroke="#EDE8DF" stroke-width="5" stroke-linecap="round"/>
+        <line x1="100" y1="140" x2="100" y2="170" stroke="#C49A3C" stroke-width="7" stroke-linecap="round"/>
+        <path d="M90,60 L110,60" stroke="#EDE8DF" stroke-width="5" stroke-linecap="round"/>
+        <line x1="90" y1="60" x2="90" y2="35" stroke="#EDE8DF" stroke-width="4" stroke-linecap="round"/>
+        <line x1="100" y1="60" x2="100" y2="40" stroke="#EDE8DF" stroke-width="4" stroke-linecap="round"/>
+        <line x1="110" y1="60" x2="110" y2="35" stroke="#EDE8DF" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g transform="rotate(-35 100 120)">
+        <line x1="100" y1="60" x2="100" y2="170" stroke="#EDE8DF" stroke-width="5" stroke-linecap="round"/>
+        <line x1="100" y1="140" x2="100" y2="170" stroke="#C49A3C" stroke-width="7" stroke-linecap="round"/>
+        <path d="M88,35 L112,35 L108,65 L92,65 Z" fill="#EDE8DF" stroke="#EDE8DF" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="96" y1="42" x2="96" y2="58" stroke="#7B1C1C" stroke-width="2"/>
+        <line x1="100" y1="42" x2="100" y2="58" stroke="#7B1C1C" stroke-width="2"/>
+        <line x1="104" y1="42" x2="104" y2="58" stroke="#7B1C1C" stroke-width="2"/>
+      </g>
+    </svg>
+  </div>
+  <h1 style="text-align: center;">CHURRASCO DU BOM</h1>
+  <div class="slogan-display">Você curte. A gente resolve.</div>
+</div>
+
+<div class="slide">
+  <h2>SOBRE A MARCA</h2>
+  <p>O Churrasco du Bom nasceu para transformar momentos de lazer em experiências gastronômicas inesquecíveis. Focada na excelência do serviço de buffet de churrasco para eventos, a marca une o melhor da tradição do fogo com a praticidade indispensável para quem organiza uma celebração.</p>
+  <p>Nossa missão é garantir que o anfitrião seja um convidado em sua própria festa. Cuidamos de cada detalhe, desde a seleção rigorosa dos cortes até o serviço de pista, entregando sabor, organização e tranquilidade.</p>
+</div>
+
+<div class="slide s-dark">
+  <h2>DIRETRIZES DA MARCA</h2>
+  <div class="grid-2">
+    <div class="pilar-box">
+      <h3>01. Praticidade</h3>
+      <p>Eliminar a preocupação do cliente. A frase chave da nossa operação é: Você curte. A gente resolve.</p>
+    </div>
+    <div class="pilar-box">
+      <h3>02. Excelência</h3>
+      <p>Cortes selecionados, assadores profissionais e ponto da carne impecável do início ao fim.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
