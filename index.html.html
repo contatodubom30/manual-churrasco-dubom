@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manual da Marca — Churrasco du Bom</title>
+<title>Manual da Marca : Churrasco du Bom</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -20,37 +20,39 @@
 
   body {
     font-family: 'Montserrat', sans-serif;
-    background: #f4f4f4;
+    background: #111111;
     color: var(--carvao);
-    padding: 20px;
+    padding: 40px 20px;
   }
 
   .logo-svg-wrap {
     display: block;
     width: 100%;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
-  /* Estilização básica para visualização dos slides em rolagem vertical */
+  /* Estrutura dos Slides estilo Heleva Vest */
   .slide {
     width: 100%;
-    max-width: 1200px;
-    min-height: 675px;
+    max-width: 1000px;
+    min-height: 562px; /* Proporção 16:9 ideal para apresentações */
     background: var(--branco);
-    margin: 0 auto 40px auto;
+    margin: 0 auto 50px auto;
     position: relative;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     padding: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 4px;
   }
 
+  /* Variações de Fundo dos Slides */
   .s-cover {
     background: var(--carvao);
     color: var(--branco);
-    border-left: 30px solid var(--dourado);
+    border-left: 35px solid var(--dourado);
   }
 
   .s-dark {
@@ -63,25 +65,72 @@
     color: var(--carvao);
   }
 
-  h1, h2, h3 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; }
-  h1 { font-size: 4.5rem; color: var(--dourado); }
-  h2 { font-size: 3rem; margin-bottom: 20px; color: var(--bordo); }
-  .s-dark h2 { color: var(--dourado); }
+  .s-section {
+    background: var(--dourado);
+    color: var(--carvao);
+    text-align: center;
+  }
+
+  h1, h2, h3, .slide-num { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; }
+  h1 { font-size: 5rem; color: var(--dourado); margin-bottom: 10px; line-height: 1; }
+  h2 { font-size: 3.5rem; margin-bottom: 25px; color: var(--bordo); text-transform: uppercase; }
+  h3 { font-size: 1.8rem; margin-bottom: 10px; color: var(--carvao); }
   
-  p { font-size: 1.1rem; line-height: 1.6; color: var(--cinza-txt); margin-bottom: 15px; }
+  .s-dark h2 { color: var(--dourado); }
+  .s-cover h2 { color: var(--branco); font-size: 2rem; margin-bottom: 0; }
+  .s-section h2 { color: var(--carvao); font-size: 5rem; }
+
+  p { font-size: 1.15rem; line-height: 1.7; color: var(--cinza-txt); margin-bottom: 15px; }
   .s-dark p { color: var(--bege); }
+  .s-cover p { color: var(--cinza-claro); }
+
+  .slide-num {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    font-size: 1.2rem;
+    color: var(--cinza-claro);
+  }
+  .s-dark .slide-num { color: rgba(255,255,255,0.3); }
 
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-  .pilar-box { background: rgba(0,0,0,0.05); padding: 20px; border-radius: 8px; border-left: 4px solid var(--dourado); }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
   
+  .pilar-box { background: rgba(0,0,0,0.04); padding: 25px; border-radius: 6px; border-left: 5px solid var(--dourado); }
+  .s-dark .pilar-box { background: rgba(255,255,255,0.08); }
+
   .slogan-display {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
-    color: var(--dourado);
+    font-size: 2.8rem;
+    color: var(--branco);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
     text-transform: uppercase;
+    letter-spacing: 3px;
   }
+
+  /* Círculos de Cores */
+  .color-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border: 3px solid var(--branco);
+  }
+
+  /* Grid de Aplicações */
+  .app-card {
+    background: var(--bege);
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+
+  /* Padrão de Fundo de Carne Simulada */
+  .pattern-bg-dark { background: var(--carvao); color: var(--branco); background-image: radial-gradient(var(--bordo) 1px, transparent 0); background-size: 24px 24px; }
+  .pattern-bg-light { background: var(--bege); color: var(--carvao); background-image: radial-gradient(var(--dourado) 1px, transparent 0); background-size: 24px 24px; }
 </style>
 </head>
 <body>
@@ -90,7 +139,7 @@
   <div class="logo-svg-wrap">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="160" height="170">
       <path d="M20,30 C60,20 140,20 180,30 C180,120 160,180 100,210 C40,180 20,120 20,30 Z" fill="none" stroke="#C49A3C" stroke-width="6" stroke-linejoin="round"/>
-      <path d="M26,36 C63,27 137,27 174,36 C174,115 155,172 100,201 C45,172 26,115 26,36 Z" fill="#7B1C1C" opacity="0.15"/>
+      <path d="M26,36 C63,27 137,27 174,36 C174,115 155,172 100,201 C45,172 26,115 26,36 Z" fill="#7B1C1C" opacity="0.2"/>
       <path d="M100,60 C125,90 140,120 130,150 C120,175 80,175 70,150 C60,120 75,90 100,60 Z" fill="#C49A3C" opacity="0.3"/>
       <path d="M100,80 C115,105 125,125 120,145 C112,160 88,160 80,145 C75,125 85,105 100,80 Z" fill="#C49A3C"/>
       <g transform="rotate(35 100 120)">
@@ -113,12 +162,14 @@
   </div>
   <h1 style="text-align: center;">CHURRASCO DU BOM</h1>
   <div class="slogan-display">Você curte. A gente resolve.</div>
+  <div class="slide-num">01</div>
 </div>
 
 <div class="slide">
   <h2>SOBRE A MARCA</h2>
   <p>O Churrasco du Bom nasceu para transformar momentos de lazer em experiências gastronômicas inesquecíveis. Focada na excelência do serviço de buffet de churrasco para eventos, a marca une o melhor da tradição do fogo com a praticidade indispensável para quem organiza uma celebração.</p>
   <p>Nossa missão é garantir que o anfitrião seja um convidado em sua própria festa. Cuidamos de cada detalhe, desde a seleção rigorosa dos cortes até o serviço de pista, entregando sabor, organização e tranquilidade.</p>
+  <div class="slide-num">02</div>
 </div>
 
 <div class="slide s-dark">
@@ -133,6 +184,173 @@
       <p>Cortes selecionados, assadores profissionais e ponto da carne impecável do início ao fim.</p>
     </div>
   </div>
+  <div class="slide-num">03</div>
+</div>
+
+<div class="slide">
+  <h2>DIRETRIZES: TIPOGRAFIA &amp; SLOGAN</h2>
+  <p>A escolha da tipografia robusta e de impacto reflete a essência da nossa marca: forte, tradicional e marcante.</p>
+  <p>O slogan oficial resume o nosso posicionamento no mercado de eventos: <strong>Você curte. A gente resolve.</strong> Comunica de forma direta o alívio que o cliente sente ao contratar os nossos serviços.</p>
+  <div class="slide-num">04</div>
+</div>
+
+<div class="slide s-section">
+  <h2>LOGOTIPO OVAL</h2>
+  <p style="color: var(--carvao);">A assinatura visual e as suas regras de aplicação</p>
+  <div class="slide-num">05</div>
+</div>
+
+<div class="slide s-dark">
+  <h2>LOGO EM FUNDO ESCURO</h2>
+  <div class="grid-2">
+    <div>
+      <p>Quando aplicado sobre o fundo Bordô Brasa ou Preto Carvão, o logotipo deve manter o contraste usando as linhas em Dourado e elementos internos em Bege.</p>
+    </div>
+    <div style="text-align: center; background: rgba(0,0,0,0.3); padding: 40px; border-radius: 8px;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="120" height="130">
+        <path d="M20,30 C60,20 140,20 180,30 C180,120 160,180 100,210 C40,180 20,120 20,30 Z" fill="none" stroke="#C49A3C" stroke-width="6"/>
+        <path d="M100,80 C115,105 125,125 120,145 C112,160 88,160 80,145 C75,125 85,105 100,80 Z" fill="#C49A3C"/>
+      </svg>
+    </div>
+  </div>
+  <div class="slide-num">06</div>
+</div>
+
+<div class="slide s-light">
+  <h2>LOGO EM FUNDO CLARO</h2>
+  <div class="grid-2">
+    <div style="text-align: center; background: rgba(255,255,255,0.7); padding: 40px; border-radius: 8px;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="120" height="130">
+        <path d="M20,30 C60,20 140,20 180,30 C180,120 160,180 100,210 C40,180 20,120 20,30 Z" fill="none" stroke="#7B1C1C" stroke-width="6"/>
+        <path d="M100,80 C115,105 125,125 120,145 C112,160 88,160 80,145 C75,125 85,105 100,80 Z" fill="#7B1C1C"/>
+      </svg>
+    </div>
+    <div>
+      <p>Em fundos claros como o Bege ou Branco, o escudo assume a cor Bordô Brasa para garantir legibilidade máxima e sofisticação.</p>
+    </div>
+  </div>
+  <div class="slide-num">07</div>
+</div>
+
+<div class="slide s-section">
+  <h2>VARIAÇÕES DE LOGO</h2>
+  <p style="color: var(--carvao);">Comportamento da marca em diferentes cenários</p>
+  <div class="slide-num">08</div>
+</div>
+
+<div class="slide">
+  <h2>VARIAÇÕES DE APLICAÇÃO (CLARAS)</h2>
+  <div class="grid-3">
+    <div style="background: #FFFFFF; padding: 20px; text-align: center; border: 1px solid #ddd;">
+      <p style="font-size:0.9rem;">Fundo Branco</p>
+    </div>
+    <div style="background: var(--bege); padding: 20px; text-align: center;">
+      <p style="font-size:0.9rem;">Fundo Bege</p>
+    </div>
+    <div style="background: #F5F5F5; padding: 20px; text-align: center; border: 1px solid #ddd;">
+      <p style="font-size:0.9rem;">Fundo Cinza</p>
+    </div>
+  </div>
+  <div class="slide-num">09</div>
+</div>
+
+<div class="slide s-dark">
+  <h2>VARIAÇÕES DE APLICAÇÃO (ESCURAS)</h2>
+  <div class="grid-3">
+    <div style="background: var(--carvao); padding: 20px; text-align: center;">
+      <p style="font-size:0.9rem; color: #fff;">Fundo Carvão</p>
+    </div>
+    <div style="background: var(--bordo); padding: 20px; text-align: center;">
+      <p style="font-size:0.9rem; color: #fff;">Fundo Bordô</p>
+    </div>
+    <div style="background: #222; padding: 20px; text-align: center;">
+      <p style="font-size:0.9rem; color: #fff;">Fundo Madeira</p>
+    </div>
+  </div>
+  <div class="slide-num">10</div>
+</div>
+
+<div class="slide s-section">
+  <h2>TIPOGRAFIA DA MARCA</h2>
+  <p style="color: var(--carvao);">As fontes que definem a voz visual da identidade</p>
+  <div class="slide-num">11</div>
+</div>
+
+<div class="slide">
+  <h2>FONTE PRINCIPAL: BEBAS NEUE</h2>
+  <h3 style="font-size: 4rem; color: var(--bordo);">BEBAS NEUE : TITULOS IMPACTANTES</h3>
+  <p>Esta fonte deve ser usada exclusivamente em caixa alta para todos os títulos de posts, cabeçalhos de materiais impressos e anúncios de grande impacto.</p>
+  <div class="slide-num">12</div>
+</div>
+
+<div class="slide">
+  <h2>FONTE SECUNDÁRIA: MONTSERRAT</h2>
+  <h3 style="font-family: 'Montserrat', sans-serif; font-weight: 700;">Montserrat : Apoio e Legibilidade</h3>
+  <p style="font-family: 'Montserrat', sans-serif;">Usada para o corpo do texto, legendas do Instagram, descrições de propostas comerciais e contratos. Garante uma leitura limpa, elegante e profissional.</p>
+  <div class="slide-num">13</div>
+</div>
+
+<div class="slide s-light">
+  <h2>PALETA DE CORES COMPLETA</h2>
+  <div class="grid-3" style="text-align: center;">
+    <div>
+      <div class="color-circle" style="background: var(--bordo);"></div>
+      <h3>Bordô Brasa</h3>
+      <p>#7B1C1C</p>
+    </div>
+    <div>
+      <div class="color-circle" style="background: var(--dourado);"></div>
+      <h3>Dourado Fogo</h3>
+      <p>#C49A3C</p>
+    </div>
+    <div>
+      <div class="color-circle" style="background: var(--carvao);"></div>
+      <h3>Preto Carvão</h3>
+      <p>#1A1A1A</p>
+    </div>
+  </div>
+  <div class="slide-num">14</div>
+</div>
+
+<div class="slide s-dark">
+  <h2>MOODBOARD DE CONCEITO</h2>
+  <p>O clima da marca evoca o rústico com sofisticação: fumaça controlada, cortes nobres bem selados, talheres pesados de aço e madeira escura. Transmite a sensação de um evento premium, organizado e extremamente saboroso.</p>
+  <div class="slide-num">15</div>
+</div>
+
+<div class="slide">
+  <h2>APLICAÇÕES DA IDENTIDADE</h2>
+  <div class="grid-3">
+    <div class="app-card">
+      <h3>Avental &amp; Uniforme</h3>
+      <p>Preto carvão com logo em dourado.</p>
+    </div>
+    <div class="app-card">
+      <h3>Tags de Carne</h3>
+      <p>Identificação do ponto em papel kraft.</p>
+    </div>
+    <div class="app-card">
+      <h3>Cartão de Visita</h3>
+      <p>Acabamento fosco premium.</p>
+    </div>
+  </div>
+  <div class="slide-num">16</div>
+</div>
+
+<div class="slide pattern-bg-dark">
+  <h2>CONCEITO DE POSTS : INSTAGRAM</h2>
+  <div style="background: rgba(0,0,0,0.8); padding: 30px; border-radius: 8px; text-align: center;">
+    <h3 style="color: var(--dourado); font-size: 2.5rem;">VOCÊ CURTE. A GENTE RESOLVE.</h3>
+    <p style="color: var(--bege); margin-top: 10px;">Frase marcante para posts de posicionamento mostrando fotos de convidados sorrindo enquanto a nossa equipe cuida da pista de assados.</p>
+  </div>
+  <div class="slide-num">17</div>
+</div>
+
+<div class="slide s-cover" style="text-align: center;">
+  <h1>CHURRASCO DU BOM</h1>
+  <div class="slogan-display" style="color: var(--dourado);">Você curte. A gente resolve.</div>
+  <p style="margin-top: 30px;">Contato: contato@churrascodubom.com.br</p>
+  <div class="slide-num">18</div>
 </div>
 
 </body>
